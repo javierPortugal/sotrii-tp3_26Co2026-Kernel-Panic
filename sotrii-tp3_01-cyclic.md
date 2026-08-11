@@ -11,8 +11,8 @@
 01. Hay que asignar las Prioridades (Rate Monotonic).\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
-- Prioridad 1 (Alta): T1\
-- Prioridad 2 (Media): T2\
+- Prioridad 1 (Alta): T1
+- Prioridad 2 (Media): T2
 - Prioridad 3 (Baja): T3
 
 02. Factor de Uso
@@ -53,3 +53,113 @@ Como ningún frame entero satisface las tres condiciones de manera directa debid
   - Frame 8 [14-16]: Ejecuta T2 (2)
   - Frame 9 [16-18]: Ejecuta T1 (1) y $$T_3c$$ (1)
   - Frame 10 [18-20]: Ejecuta T2 (2)
+
+
+
+## Sistema 2
+|Tarea |   C  |  T = D  |
+| :----- | :--------------------- | :------: | 
+|T1     |  1  | 6    |
+|T2      | 2  |  10  |
+|T3      | 2  | 18   |
+
+01. Hay que asignar las Prioridades (Rate Monotonic).\
+Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
+
+- Prioridad 1 (Alta): T1
+- Prioridad 2 (Media): T2
+- Prioridad 3 (Baja): T3
+
+02. Factor de Uso
+
+$$U = \sum \frac{C_i}{T_i} = \frac{1}{6} + \frac{2}{10} + \frac{2}{18} = 0.1667 + 0.20 + 0.1111 = \mathbf{0.4778}$$
+
+- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema es holgadamente asegurable.
+
+03. Hiperperiodo (H\)
+El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
+
+$$H=\text{mcm}(6,10,18)=\mathbf{90}\)$$
+
+04. Periodo Secundario o Tamaño de Trama (f\)\
+Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fundamentales:
+
+ a. $$f \geq \max(1,2,2) \implies f \geq 2\$$\
+ b. $$90 \pmod f = 0$$\
+ c. Comprobacion para $$f = 2$$
+
+   - T1: $$\(2(2) - \text{mcd}(6, 2) = 4 - 2 = 2 \leq 6\)$$ (Cumple)
+   - T2: $$\(2(2) - \text{mcd}(10, 2) = 4 - 2 = 2 \leq 10\)$$ (Cumple)
+   - T3: $$\(2(2) - \text{mcd}(18, 2) = 4 - 2 = 2 \leq 18\)$$ (Cumple)
+
+El tamaño de trama seleccionado es $$f = 2$$
+   
+05. Cronograma y Diagrama de Gantt
+   Dado que H = 90 la ejecucion se repite de forma ciclica organizada en rafagas de frames de tamaño 2:
+  - Frame 1 [0-2]: Ejecuta T1 (1) y T2 (1)
+  - Frame 2 [2-4]: Ejecuta T2 (1) y T3 (1)
+  - Frame 3 [4-6]: Ejecuta T3 (1), Libre (1)
+  - Frame 4 [6-8]: Ejecuta T1 (1), Libre (1)
+  - ....el patron continua.....
+
+
+
+## Sistema 3
+|Tarea |   C  |  T = D  |
+| :----- | :--------------------- | :------: | 
+|T1     |  1  | 8    |
+|T2      | 3  |  15  |
+|T3      | 4  | 20   |
+|T4      | 6 | 22   |
+
+01. Hay que asignar las Prioridades (Rate Monotonic).\
+Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
+
+- Prioridad 1 (Alta): T1
+- Prioridad 2 (Media): T2
+- Prioridad 3 (Media): T3
+- Prioridad 4 (Baja): T4
+
+02. Factor de Uso
+
+$$U = \sum \frac{C_i}{T_i} = \frac{1}{8} + \frac{3}{15} + \frac{4}{20}  + \frac{6}{22} = 0.125 + 0.20 + 0.20 + 0.2727 = \mathbf{0.7977}$$
+
+- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema cumple la condicion de suficiencia de tiempo de CPU.
+
+03. Hiperperiodo (H\)
+El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
+
+$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\)$$
+
+04. Periodo Secundario o Tamaño de Trama (f\)\
+Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fundamentales:
+
+ a. $$f \geq \max(1,3,4,6) \implies f \geq 6\$$\
+ b. Para que se cumpla la restriccion de T1 ($$D_1=8$$) evaluamos el divisor f = 8:
+ 
+   - T1: $$\(2(8) - \text{mcd}(8, 8) = 16 - 8 = 8 \leq 8\)$$ (Cumple)
+   - T2: $$\(2(8) - \text{mcd}(15, 8) = 16 - 1 = 15 \leq 15\)$$ (Cumple)
+   - T3: $$\(2(8) - \text{mcd}(20, 8) = 16 - 4 = 12 \leq 12\)$$ (Cumple)
+   - T4: $$\(2(8) - \text{mcd}(22, 8) = 16 - 2 = 14 \leq 14\)$$ (Cumple)
+   - 1320 (mod 8) = 0 (Cumple)
+
+El tamaño de trama seleccionado es $$f = 8$$
+   
+05. Cronograma y Diagrama de Gantt
+
+  - [0-1]: Ejecuta T1 completa rafaga de 1
+  - [1-4]: Ejecuta T2 completa rafaga de 3
+  - [4-8]: Ejecuta T3 completa rafaga de 4
+  - [8-12]: en t = 8 se reactiva T1
+
+
+|Marco|   M1  |  M2 | M3 | M4 | M5 | M6 |
+| :----- | :--:| :--:| :--:|:--:|:--:|:--:|
+|Tiempo  |0  --  4|    -- 8 |  -- 12|  -- 16  | --20 |   --24|
+|T1  C=1    | x  |    | x  |   | x  |   |
+|T2   C=3     | xxx  |    |   | x  | xx  |   |
+|T3  C=4      |  | xxxx   |   |   |   | xx  |
+|T4  C=6     |  |    | xx  | xxx  |   |   |
+|Ocio (-)     |  |    | -  | -  | -  |   |
+
+

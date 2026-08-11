@@ -1,4 +1,5 @@
-# CESE - Sistemas Operativos de Tiempo Real II ## Trabajo Práctico N°: 3 - Task Scheduling 
+# CESE - Sistemas Operativos de Tiempo Real II 
+## Trabajo Práctico N°: 3 - Task Scheduling 
 ### Cohorte-Grupo: 26Co2026 - Grupo_1 
 ### Modelo de placa: NUCLEO-F446RE 
 ### Responsable de la entrega 

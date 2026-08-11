@@ -4,6 +4,6 @@
 ### Responsable de la entrega 
 | N° SIU | Apellidos, Nombres | Fecha | Deadline | 
 | :----- | :--------------------- | :------: | :-------: | 
-|  e2609 | 	MOYA, Martin Felipe  | | Semana 08 |
+| e2609 | 	MOYA, Martin Felipe  | | Semana 08 |
 | e2612| 	PORTUGAL SALOMON, Javier | | Semana 08 |
 | e2620| 	VALDEZ, Boris Crisitan | | Semana 08 |

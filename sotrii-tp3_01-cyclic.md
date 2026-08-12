@@ -212,3 +212,17 @@ $$U = \sum \frac{C_i}{T_i} = \frac{2}{6} + \frac{2}{8} + \frac{4}{12}  + \frac{4
 
 
 
+## Describir configuración de FreeRTOS para cumplir con Cyclic Scheduling.
+
+- Debemos de poner los siguientes valores en 0 para que freeRTOs se vuelva estrictamente cooperativo (ninguna tarea se ejecutara a menois que la tarea anterior termnine voluntariamente o el planificador lo decida)
+
+/* Desactiva la expropiación automática */
+
+#define configUSE_PREEMPTION                      0 
+
+/* Desactiva el reparto de tiempo entre tareas de igual prioridad */
+
+#define configUSE_TIME_SLICING                    0
+
+
+

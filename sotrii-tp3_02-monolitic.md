@@ -79,3 +79,44 @@ El sistema es automaticamente Planificable
 |Ocio (-) |  | |  |   |   | -  |  | - | - |  -|  |  |  | - | - | - |-  |
 
 
+
+
+
+## Sistema 3
+
+01. Hay que asignar las Prioridades.\
+ 
+- Las prioridades se asignan de acuerdo al criterio: Menor periodo = Mayor prioridad
+- Prioridad 1  T1
+- Prioridad 2  T2
+- Prioridad 3  T3
+- Prioridad 4  T4
+
+02. Factor de Uso
+
+$$U = \sum \frac{C_i}{T_i} = \frac{1}{8} + \frac{3}{15} + \frac{4}{20} + \frac{6}{22} = 0.125 + 0.2000 + 0.2000 + 0.2727 = \mathbf{0.7977}$$
+
+
+03. Hiperperiodo (H\)
+El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
+
+$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\)$$
+
+04. Periodo Secundario o Tamaño de Trama (f\)\ : 4
+Para el enfoque ciclico equivalente con fragmentacion
+
+Test de Garantía RMS: Como $$\(U = 0.7977 \leq 0.756\)$$, analizamos el analisis de tiempo de respuesta (RTA)
+
+El sistema es totalmente Planificable
+
+05. Diagrama de Gantt
+
+|Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
+| :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|T1     | T1  |    |  |   | |  |  |  |  T1 |  |  |  |  |  |  |  | T1  |
+|T2     |   |  T2  |  T2 | T2 |   |  |  |  |  |   |   |  |  |  |  | T2 |  |
+|T3     |   |   |   |   |T3  | T3  | T3 | T3 |  |  |  |  |  |    |     |  |  |
+|T4     |   |   |   |   |   |   |  |  |  | T4 |T4 | T4 | T4 | T4 | T4  |  |  |
+|Ocio (-) |  | |  |   |   |   |  |  |  |  |  |  |  |  |  |  |  |
+
+

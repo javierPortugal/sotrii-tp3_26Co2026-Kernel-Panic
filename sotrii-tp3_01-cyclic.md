@@ -54,7 +54,13 @@ Como ningún frame entero satisface las tres condiciones de manera directa debid
   - Frame 9 [16-18]: Ejecuta T1 (1) y $$T_3c$$ (1)
   - Frame 10 [18-20]: Ejecuta T2 (2)
 
-
+|Marco|   M1  |  M2 | M3 | M4 |
+| :----- | :--:| :--:| :--:|:--:|
+|Tiempo  |0  --  5|    -- 10 |  -- 15|  -- 20|
+|T1  C=1 | x | x |  x x | x |
+|T2   C=2     | xx  | xx   |  x  x  | x  x | 
+|T3  C=5      |  xx |  xx |   x|   |  
+|Ocio (-)     |  |   |   |  --| 
 
 ## Sistema 2
 |Tarea |   C  |  T = D  |
@@ -101,6 +107,18 @@ El tamaño de trama seleccionado es $$f = 2$$
   - Frame 3 [4-6]: Ejecuta T3 (1), Libre (1)
   - Frame 4 [6-8]: Ejecuta T1 (1), Libre (1)
   - ....el patron continua.....
+
+|Marco|   M1  |  M2 | M3 | M4 | M5  |  M6  |
+| :----- | :--:| :--:| :--:|:--:|:--:|:--:|
+|Tiempo  |0  --  3|  -- 6 |  -- 9|  -- 12|  -- 15|  -- 18|
+|T1  C=1    | x  |    | x |   | x |  |
+|T2   C=2     | xx  |    |   | xx |   |  |
+|T3  C=2      |   |  xx |   |   |   |   |
+|Ocio (-)     |  | -|  --|  - |   --|  ---|
+
+
+
+
 
 
 
@@ -153,13 +171,44 @@ El tamaño de trama seleccionado es $$f = 8$$
   - [8-12]: en t = 8 se reactiva T1
 
 
-|Marco|   M1  |  M2 | M3 | M4 | M5 | M6 |
+|Marco  |   M1  |  M2 | M3 | M4 | M5 | M6 |
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|
 |Tiempo  |0  --  4|    -- 8 |  -- 12|  -- 16  | --20 |   --24|
 |T1  C=1    | x  |    | x  |   | x  |   |
 |T2   C=3     | xxx  |    |   | x  | xx  |   |
 |T3  C=4      |  | xxxx   |   |   |   | xx  |
-|T4  C=6     |  |    | xx  | xxx  |   |   |
+|T4  C=6     |  |    | xx  | xx  |   |  xx |
 |Ocio (-)     |  |    | -  | -  | -  |   |
+
+
+
+
+
+
+## Sistema 4
+|Tarea |   C  |  T = D  |
+| :----- | :--------------------- | :------: | 
+|T1     |  2  | 6    |
+|T2      | 2  |  8  |
+|T3      | 4  | 12   |
+|T4      | 4 | 24   |
+
+01. Hay que asignar las Prioridades (Rate Monotonic).\
+Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
+
+- Prioridad 1 - T1
+- Prioridad 2 - T2
+- Prioridad 3 - T3
+- Prioridad 4 - T4
+
+02. Factor de Uso
+
+$$U = \sum \frac{C_i}{T_i} = \frac{2}{6} + \frac{2}{8} + \frac{4}{12}  + \frac{4}{24} = 0.3333 + 0.2500 + 0.3333 + 0.1667 = \mathbf{1.0833}$$
+
+- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema NO CUMPLE la condicion de suficiencia de tiempo de CPU, ya que es estrictamente mayor que 1 (100%).
+
+
+- El sistema 4 NO es factible (No planificable)
+
 
 

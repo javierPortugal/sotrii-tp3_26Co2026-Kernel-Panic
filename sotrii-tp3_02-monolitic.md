@@ -6,7 +6,7 @@
 
 ## Sistema 1
 
-01. Hay que asignar las Prioridades.\
+01. Hay que asignar las Prioridades.
  
 - Las prioridades se asignan de acuerdo al criterio: Menor periodo = Mayor prioridad
 - Prioridad 1  T1
@@ -45,7 +45,7 @@ El sistema es totalmente Planificable
 
 ## Sistema 2
 
-01. Hay que asignar las Prioridades.\
+01. Hay que asignar las Prioridades.
  
 - Las prioridades se asignan de acuerdo al criterio: Menor periodo = Mayor prioridad
 - Prioridad 1  T1
@@ -60,7 +60,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{6} + \frac{2}{10} + \frac{2}{18} = 0.1667 
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(6,10,18)=\mathbf{90}\)$$
+$$H=\text{mcm}(6,10,18)=\mathbf{90}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\ : 3
 Para el enfoque ciclico equivalente con fragmentacion
@@ -100,7 +100,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{8} + \frac{3}{15} + \frac{4}{20} + \frac{6
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\)$$
+$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\ : 4
 Para el enfoque ciclico equivalente con fragmentacion

@@ -159,3 +159,29 @@ El sistema es totalmente Planificable
 |T4     |   |   |   | 0.5 | 0.5  | 0.5  | T4 | T4 | 0.5 | T4 |  |   | 0.5 | T4 | T4  | 0.5 |  0.5|
 |Ocio (-) |  | |  |   |   |   |  |  |  |  |  |  |  |  |  |  |  |
 
+
+
+
+
+## Describir configuración de FreeRTOS para cumplir con Rate Monolitic Scheduling.
+
+La configuracion debe de hacerse en FreeRTOSConfig.h con lo siguiente:
+
+/* Habilita la expropiación (Preemption) por prioridades */
+
+#define configUSE_PREEMPTION                    1 
+
+/* Desactiva el reparto de tiempo para tareas con la misma prioridad */
+
+#define configUSE_TIME_SLICING                  0
+
+/* Configura la frecuencia del reloj del sistema (Tick) a 1 kHz (1 tick = 1 ms) */
+
+/* Ajustar a un valor más alto si se requieren fracciones de milisegundo (ej. 2000 o 10000) */
+
+#define configTICK_RATE_HZ                      ( ( TickType_t ) 1000 )
+
+/* Asegura que la prioridad máxima permitida sea suficiente para tus tareas */
+
+#define configMAX_PRIORITIES                    ( 5 )
+

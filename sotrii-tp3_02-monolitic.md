@@ -21,7 +21,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{4} + \frac{2}{5} + \frac{5}{20} = 0.25 + 0
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(4,5,20)=\mathbf{20}\)$$
+$$H=\text{mcm}(4,5,20)=\mathbf{20}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\ : 5
 Para el enfoque ciclico equivalente con fragmentacion

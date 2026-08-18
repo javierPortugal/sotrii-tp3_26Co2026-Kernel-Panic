@@ -24,7 +24,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{4} + \frac{2}{5} + \frac{5}{20} = 0.25 + 0
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(4,5,20)=\mathbf{20}\)$$
+$$H=\text{mcm}(4,5,20)=\mathbf{20}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\
 Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fundamentales:
@@ -100,7 +100,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{6} + \frac{2}{10} + \frac{2}{18} = 0.1667 
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(6,10,18)=\mathbf{90}\)$$
+$$H=\text{mcm}(6,10,18)=\mathbf{90}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\
 Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fundamentales:
@@ -178,7 +178,7 @@ Diagrama de Gantt
 |T3      | 4  | 20   |
 |T4      | 6 | 22   |
 
-01. Hay que asignar las Prioridades (Rate Monotonic).\
+01. Hay que asignar las Prioridades.\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 - Prioridad 1 (Alta): T1
@@ -195,7 +195,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{1}{8} + \frac{3}{15} + \frac{4}{20}  + \frac{
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\)$$
+$$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\
 

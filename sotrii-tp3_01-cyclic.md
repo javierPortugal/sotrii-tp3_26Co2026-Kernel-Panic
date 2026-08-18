@@ -190,7 +190,7 @@ Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 $$U = \sum \frac{C_i}{T_i} = \frac{1}{8} + \frac{3}{15} + \frac{4}{20}  + \frac{6}{22} = 0.125 + 0.20 + 0.20 + 0.2727 = \mathbf{0.7977}$$
 
-- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema cumple la condicion de suficiencia de tiempo de CPU.
+- Test de Garantía Inicial: Como $$\(U = 0.7977 \leq 1\)$$, el sistema cumple la condicion de suficiencia de tiempo de CPU.
 
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
@@ -198,35 +198,12 @@ El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 $$H=\text{mcm}(8,15,20, 22)=\mathbf{1320}\)$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\
-Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fundamentales:
 
- a. $$f \geq \max(1,3,4,6) \implies f \geq 6\$$\
- b. Para que se cumpla la restriccion de T1 ($$D_1=8$$) evaluamos el divisor f = 8:
- 
-   - T1: $$\(2(8) - \text{mcd}(8, 8) = 16 - 8 = 8 \leq 8\)$$ (Cumple)
-   - T2: $$\(2(8) - \text{mcd}(15, 8) = 16 - 1 = 15 \leq 15\)$$ (Cumple)
-   - T3: $$\(2(8) - \text{mcd}(20, 8) = 16 - 4 = 12 \leq 12\)$$ (Cumple)
-   - T4: $$\(2(8) - \text{mcd}(22, 8) = 16 - 2 = 14 \leq 14\)$$ (Cumple)
-   - 1320 (mod 8) = 0 (Cumple)
-
-El tamaño de trama seleccionado es $$f = 8$$
+El tamaño de trama seleccionado es $$f = 1$$
    
 05. Cronograma y Diagrama de Gantt
 
-  - [0-1]: Ejecuta T1 completa rafaga de 1
-  - [1-4]: Ejecuta T2 completa rafaga de 3
-  - [4-8]: Ejecuta T3 completa rafaga de 4
-  - [8-12]: en t = 8 se reactiva T1
 
-
-|Marco  |   M1  |  M2 | M3 | M4 | M5 | M6 |
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|
-|Tiempo  |0  --  4|    -- 8 |  -- 12|  -- 16  | --20 |   --24|
-|T1  C=1    | x  |    | x  |   | x  |   |
-|T2   C=3     | xxx  |    |   | x  | xx  |   |
-|T3  C=4      |  | xxxx   |   |   |   | xx  |
-|T4  C=6     |  |    | xx  | xx  |   |  xx |
-|Ocio (-)     |  |    | -  | -  | -  |   |
 
 
 

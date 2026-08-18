@@ -39,12 +39,7 @@ El sistema es totalmente Planificable
 
 ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/5c73b067249fb1df28f877e858ea5b5adb669f6b/gantt_sistema_1_rm.png)
 
-|Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|T1     | T1  |    |  |   | T1|  |  |  | T1  |  |  |  |  T1|  |  |  | T1 |
-|T2     |   |  T2  |  T2 |  |   | T2 | T2 |  |  |  |T2 | T2  |  |  |  | T2 |  |
-|T3     |   |   |   |  T3 |   |   |  | T3 |  | T3 |  |  |  | T3 | T3  |  |  |
-|Ocio (-) |  | |  |   |   |  |  |  |  |  |  |  |  |  |  |  |  |
+
 
 
 ## Sistema 2
@@ -76,13 +71,6 @@ El sistema es automaticamente Planificable
 05. Diagrama de Gantt
 
    ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/88257cbe038919300c3da384e974572909a548a7/gantt_sistema_2_rm.png)
-
-|Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|T1     | T1  |    |  |   | |  | T1 |  |   |  |  |  |  T1|  |  |  |  |
-|T2     |   |  T2  |  T2 |  |   |  |  |  |  |T2 |T2 |  |  |  |  |  |  |
-|T3     |   |   |   |  T3 |T3  |   |  | T3 |  | T3 |  |  |  | T3 | T3  |  |  |
-|Ocio (-) |  | |  |   |   | -  |  | - | - |  -|  |  |  | - | - | - |-  |
 
 
 
@@ -119,14 +107,6 @@ El sistema es totalmente Planificable
 
 ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/af6f7a98afea73270da7664ae7a6dad2b0e7a191/gantt_sistema_3_rm.png)
 
-|Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|T1     | T1  |    |  |   | |  |  |  |  T1 |  |  |  |  |  |  |  | T1  |
-|T2     |   |  T2  |  T2 | T2 |   |  |  |  |  |   |   |  |  |  |  | T2 |  |
-|T3     |   |   |   |   |T3  | T3  | T3 | T3 |  |  |  |  |  |    |     |  |  |
-|T4     |   |   |   |   |   |   |  |  |  | T4 |T4 | T4 | T4 | T4 | T4  |  |  |
-|Ocio (-) |  | |  |   |   |   |  |  |  |  |  |  |  |  |  |  |  |
-
 
 
 
@@ -159,16 +139,7 @@ El sistema es totalmente Planificable
 
 05. Diagrama de Gantt
 
-![image alt]()
-
-|Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|T1     | T1  |    |  |   | T1|  |  |  |  T1 |  |  |  | T1 |  |  |  | T1  |
-|T2     |  0.5 |  T2  |    |   |   | T2 |  |  |  |   | T2  |  |  |  |  | T2 |  |
-|T3     |   |  0.5 | T3  | T3  |  |   |  |  |  |  |  | T3 | T3 |    |     |  |  |
-|T4     |   |   |   | 0.5 | 0.5  | 0.5  | T4 | T4 | 0.5 | T4 |  |   | 0.5 | T4 | T4  | 0.5 |  0.5|
-|Ocio (-) |  | |  |   |   |   |  |  |  |  |  |  |  |  |  |  |  |
-
+![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/e8a664891f1372b65b3dbaf23c2f9ac6fad3ef1b/gantt_sistema_4_rm.png)
 
 
 

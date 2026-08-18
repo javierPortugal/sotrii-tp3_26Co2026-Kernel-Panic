@@ -235,7 +235,7 @@ $$U = \sum \frac{C_i}{T_i} = \frac{0.5}{4} + \frac{1}{5} + \frac{2}{10}  + \frac
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-$$H=\text{mcm}(4,5,10,24)=\mathbf{120}\)$$
+$$H=\text{mcm}(4,5,10,24)=\mathbf{120}\$$
 
 04. Periodo Secundario o Tamaño de Trama (f\)\
 
@@ -243,7 +243,7 @@ El tamaño de trama seleccionado es $$f = 1$$
    
 05. Cronograma y Diagrama de Gantt
 
-    ![image alt]()
+    ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/1d85754bbe96c5cd063f35eaef37c645d65f5943/gannt_sistema_4_ciclico.png)
 
 
 

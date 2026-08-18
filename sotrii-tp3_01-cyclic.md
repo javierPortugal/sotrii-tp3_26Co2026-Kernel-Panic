@@ -76,13 +76,6 @@ Diagrama de Gantt
 
 
 
-|Marco|   M1  |  M2 | M3 | M4 |
-| :----- | :--:| :--:| :--:|:--:|
-|Tiempo  |0  --  5|    -- 10 |  -- 15|  -- 20|
-|T1  C=1 | x | x |  x x | x |
-|T2   C=2     | xx  | xx   |  x  x  | x  x | 
-|T3  C=5      |  xx |  xx |   x|   |  
-|Ocio (-)     |  |   |   |  --| 
 
 ## Sistema 2
 |Tarea |   C  |  T = D  |
@@ -91,7 +84,7 @@ Diagrama de Gantt
 |T2      | 2  |  10  |
 |T3      | 2  | 18   |
 
-01. Hay que asignar las Prioridades (Rate Monotonic).\
+01. Hay que asignar las Prioridades.\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 - Prioridad 1 (Alta): T1
@@ -102,7 +95,7 @@ Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 $$U = \sum \frac{C_i}{T_i} = \frac{1}{6} + \frac{2}{10} + \frac{2}{18} = 0.1667 + 0.20 + 0.1111 = \mathbf{0.4778}$$
 
-- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema es holgadamente asegurable.
+- Test de Garantía Inicial: Como $$\(U = 0.4778 \leq 1\)$$, el sistema es planificable.
 
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
@@ -123,24 +116,57 @@ Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fun
 El tamaño de trama seleccionado es $$f = 2$$
    
 05. Cronograma y Diagrama de Gantt
-   Dado que H = 90 la ejecucion se repite de forma ciclica organizada en rafagas de frames de tamaño 2:
-  - Frame 1 [0-2]: Ejecuta T1 (1) y T2 (1)
-  - Frame 2 [2-4]: Ejecuta T2 (1) y T3 (1)
-  - Frame 3 [4-6]: Ejecuta T3 (1), Libre (1)
-  - Frame 4 [6-8]: Ejecuta T1 (1), Libre (1)
-  - ....el patron continua.....
-
-|Marco|   M1  |  M2 | M3 | M4 | M5  |  M6  |
-| :----- | :--:| :--:| :--:|:--:|:--:|:--:|
-|Tiempo  |0  --  3|  -- 6 |  -- 9|  -- 12|  -- 15|  -- 18|
-|T1  C=1    | x  |    | x |   | x |  |
-|T2   C=2     | xx  |    |   | xx |   |  |
-|T3  C=2      |   |  xx |   |   |   |   |
-|Ocio (-)     |  | -|  --|  - |   --|  ---|
 
 
+  - Marco 0: T1(inst 0: 0-1)
+  - Marco 1: T2(inst 0: 0-2)
+  - Marco 2: T3(inst 0: 0-2)
+  - Marco 3: T1(inst 1: 0-1)
+  - Marco 4: (vacio)
+  - Marco 5: T2(inst 1: 0-2)
+  - Marco 6: T1(inst 2: 0-1)
+  - Marco 7: (vacio)
+  - Marco 8: (vacio)
+  - Marco 9: T1(inst 3: 0-1)
+  - Marco 10: T2(inst 2: 0-2)
+  - Marco 11: T3(inst 1: 0-2)
+  - Marco 12: T1(inst 4: 0-1)
+  - Marco 13: (vacio)
+  - Marco 14: (vacio)
+  - Marco 15: T1(inst 5: 0-1)
+  - Marco 16: T2(inst 3: 0-2)
+  - Marco 17: (vacio)
+  - Marco 18: T1(inst 6: 0-1)
+  - Marco 19: T3(inst 2: 0-2)
+  - Marco 20: T2(inst 4: 0-2)
+  - Marco 21: T1(inst 7: 0-1)
+  - Marco 22: (vacio)
+  - Marco 23: (vacio)
+  - Marco 24: T1(inst 8: 0-1)
+  - Marco 25: T2(inst 5: 0-2)
+  - Marco 26: (vacio)
+  - Marco 27: T1(inst 9: 0-1)
+  - Marco 28: T3(inst 3: 0-2)
+  - Marco 29: (vacio)
+  - Marco 30: T1(inst 10: 0-1)
+  - Marco 31: T2(inst 6: 0-2)
+  - Marco 32: (vacio)
+  - Marco 33: T1(inst 11: 0-1)
+  - Marco 34: (vacio)
+  - Marco 35: T2(inst 7: 0-2)
+  - Marco 36: T1(inst 12: 0-1)
+  - Marco 37: T3(inst 4: 0-2)
+  - Marco 38: (vacio)
+  - Marco 39: T1(inst 13: 0-1)
+  - Marco 40: T2(inst 8: 0-2)
+  - Marco 41: (vacio)
+  - Marco 42: T1(inst 14: 0-1)
+  - Marco 43: (vacio)
+  - Marco 44: (vacio)
 
+Diagrama de Gantt
 
+![image alt]( )
 
 
 

@@ -166,7 +166,7 @@ El tamaño de trama seleccionado es $$f = 2$$
 
 Diagrama de Gantt
 
-![image alt]( )
+![image alt]( https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/6aa94267706c7d6f302177348ba4042cfe237933/gantt_sistema_2_ciclico.png)
 
 
 

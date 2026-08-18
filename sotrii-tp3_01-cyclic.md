@@ -203,7 +203,7 @@ El tamaño de trama seleccionado es $$f = 1$$
    
 05. Cronograma y Diagrama de Gantt
 
-
+    ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/58833e5c317d880a8b321c74a40149de7e901ef5/gantt_sistema_3_ciclico.png)
 
 
 

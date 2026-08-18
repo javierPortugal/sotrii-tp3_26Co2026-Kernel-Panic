@@ -8,12 +8,7 @@
 |T2      | 2  |  5   |
 |T3      | 5  | 20   |
 
-01. Hay que asignar las Prioridades.\
-Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
-- Prioridad 1 (Alta): T1
-- Prioridad 2 (Media): T2
-- Prioridad 3 (Baja): T3
 
 02. Factor de Uso
 
@@ -84,12 +79,7 @@ Diagrama de Gantt
 |T2      | 2  |  10  |
 |T3      | 2  | 18   |
 
-01. Hay que asignar las Prioridades.\
-Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
-- Prioridad 1 (Alta): T1
-- Prioridad 2 (Media): T2
-- Prioridad 3 (Baja): T3
 
 02. Factor de Uso
 
@@ -178,13 +168,7 @@ Diagrama de Gantt
 |T3      | 4  | 20   |
 |T4      | 6 | 22   |
 
-01. Hay que asignar las Prioridades.\
-Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
-- Prioridad 1 (Alta): T1
-- Prioridad 2 (Media): T2
-- Prioridad 3 (Media): T3
-- Prioridad 4 (Baja): T4
 
 02. Factor de Uso
 
@@ -218,13 +202,7 @@ El tamaño de trama seleccionado es $$f = 1$$
 |T3      | 2     | 10  |
 |T4      | 9     | 24  |
 
-01. Hay que asignar las Prioridades.\
-Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
-- Prioridad 1 - T1
-- Prioridad 2 - T2
-- Prioridad 3 - T3
-- Prioridad 4 - T4
 
 02. Factor de Uso
 

@@ -8,7 +8,7 @@
 |T2      | 2  |  5   |
 |T3      | 5  | 20   |
 
-01. Hay que asignar las Prioridades (Rate Monotonic).\
+01. Hay que asignar las Prioridades.\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 - Prioridad 1 (Alta): T1
@@ -19,7 +19,7 @@ Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 $$U = \sum \frac{C_i}{T_i} = \frac{1}{4} + \frac{2}{5} + \frac{5}{20} = 0.25 + 0.40 + 0.25 = \mathbf{0.90}$$
 
-- Test de Garantía Inicial: Como \(U = 0.90 \leq 1\), el sistema es potencialmente planificable.
+- Test de Garantía Inicial: Como $$\(U = 0.90 \leq 1\)$$, el sistema es potencialmente planificable.
 
 03. Hiperperiodo (H\)
 El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
@@ -36,23 +36,41 @@ Para determinar el tamaño del frame (f\), se deben cumplir tres condiciones fun
      
    $$(2(5)-\text{mcd}(4,5)=10-1=9\not{\le }4\)$$ (Falla).
 
-Como ningún frame entero satisface las tres condiciones de manera directa debido al gran tamaño de \(C_3 = 5\), se requiere dividir la tarea T3 en sub-tareas más pequeñas. Dividimos T3 en tres partes: $$T_3a$$ (C=2), $$T_3b$$ (C=2)\) y $$T_3c$$ (C=1).
-- Nuevo $$\max(C_i) = 2\$$.
-- Seleccionamos \(f = 2\) (divisor de 20):
-   - T1: $$\(2(2) - \text{mcd}(4, 2) = 2 \leq 4\)$$ (Cumple)
-   - T2: $$\(2(2) - \text{mcd}(5, 2) = 3 \leq 5\)$$ (Cumple)
+Como ningún frame entero satisface las tres condiciones de manera directa, se requiere dividir las tareas quedando: $$T_31a$$ (C=1), $$T_2a$$ (C=1)\),  $$T_2b$$ (C=1) y T3 dividido en 5 tareas, $$T_3a$$,  $$T_3b$$,  $$T_3c$$,  $$T_3d$$,  $$T_3e$$, con C=1.
+
+- Seleccionamos \(f = 1\) (divisor de 20):
+   - T1: $$\(2(1) - \text{mcd}(4, 1) = 1 \leq 4\)$$ (Cumple)
+   - T2: $$\(2(1) - \text{mcd}(5, 1) = 1 \leq 5\)$$ (Cumple)
+   - T3: $$\(2(1) - \text{mcd}(20, 1) = 1 \leq 20\)$$ (Cumple)
+
+- El periodo Secundario Optimo es f = 1
+  
    
-05. Cronograma y Diagrama de Gantt (Ciclo de 0 a 20)Con \(f = 2\), hay 10 frames en el hiperperiodo. Las subtareas de T3 se distribuyen en los espacios libres:
-  - Frame 1 [0-2]: Ejecuta T1 (1) y T2 (1)
-  - Frame 2 [2-4]: Ejecuta T2 (1) y $$T_3a$$ (1)
-  - Frame 3 [4-6]: Ejecuta T1 (1) y $$T_3a$$ (restante 1)
-  - Frame 4 [6-8]: Ejecuta T2 (2)
-  - Frame 5 [8-10]: Ejecuta T1 (1) y $$T_3b$$ (1)
-  - Frame 6 [10-12]: Ejecuta T2 (2)
-  - Frame 7 [12-14]: Ejecuta T1 (1) y $$T_3b$$ (restante 1)
-  - Frame 8 [14-16]: Ejecuta T2 (2)
-  - Frame 9 [16-18]: Ejecuta T1 (1) y $$T_3c$$ (1)
-  - Frame 10 [18-20]: Ejecuta T2 (2)
+05. Cronograma y Diagrama de Gantt (Ciclo de 0 a 20)Con \(f = 1\), hay 20 frames en el hiperperiodo.
+
+- Marco 0: T1(inst 0: 0-1)
+- Marco 1: T2(inst 0, parte 1/2: 0-1)
+- Marco 2: T2(inst 0, parte 2/2: 0-1)
+- Marco 3: T3(inst 0, parte 1/5: 0-1)
+- Marco 4: T1(inst 1: 0-1)
+- Marco 5: T2(inst 1, parte 1/2: 0-1)
+- Marco 6: T2(inst 1, parte 2/2: 0-1)
+- Marco 7: T3(inst 0, parte 2/5: 0-1)
+- Marco 8: T1(inst 2: 0-1)
+- Marco 9: T3(inst 0, parte 3/5: 0-1)
+- Marco 10: T2(inst 2, parte 1/2: 0-1)
+- Marco 11: T2(inst 2, parte 2/2: 0-1)
+- Marco 12: T1(inst 3: 0-1)
+- Marco 13: T3(inst 0, parte 4/5: 0-1)
+- Marco 14: T3(inst 0, parte 5/5: 0-1)
+- Marco 15: T2(inst 3, parte 1/2: 0-1)
+- Marco 16: T1(inst 4: 0-1)
+- Marco 17: T2(inst 3, parte 2/2: 0-1)
+- Marco 18: (vacio)
+- Marco 19: (vacio)
+
+
+
 
 |Marco|   M1  |  M2 | M3 | M4 |
 | :----- | :--:| :--:| :--:|:--:|

@@ -212,13 +212,13 @@ El tamaño de trama seleccionado es $$f = 1$$
 
 ## Sistema 4
 |Tarea |   C  |  T = D  |
-| :----- | :--------------------- | :------: | 
-|T1     |  2  | 6    |
-|T2      | 2  |  8  |
-|T3      | 4  | 12   |
-|T4      | 4 | 24   |
+| :----- | :---------- | :------: |  
+|T1      | 0.500 |  4  | 
+|T2      | 1     |  5  |
+|T3      | 2     | 10  |
+|T4      | 9     | 24  |
 
-01. Hay que asignar las Prioridades (Rate Monotonic).\
+01. Hay que asignar las Prioridades.\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 - Prioridad 1 - T1
@@ -228,12 +228,22 @@ Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)
 
 02. Factor de Uso
 
-$$U = \sum \frac{C_i}{T_i} = \frac{2}{6} + \frac{2}{8} + \frac{4}{12}  + \frac{4}{24} = 0.3333 + 0.2500 + 0.3333 + 0.1667 = \mathbf{1.0833}$$
+$$U = \sum \frac{C_i}{T_i} = \frac{0.5}{4} + \frac{1}{5} + \frac{2}{10}  + \frac{9}{24} = 0.125 + 0.200 + 0.200 + 0.375 = \mathbf{0.900}$$
 
-- Test de Garantía Inicial: Como $$\(U  \leq 1\)$$, el sistema NO CUMPLE la condicion de suficiencia de tiempo de CPU, ya que es estrictamente mayor que 1 (100%).
+- Test de Garantía Inicial: Como $$\(U = 0.90 \leq 1\)$$, el sistema cumple la condicion de suficiencia de capacidad de procesamiento para ser planificable.
 
+03. Hiperperiodo (H\)
+El periodo mayor o ciclo mayor es el mínimo común múltiplo de los periodos:
 
-- El sistema 4 NO es factible (No planificable)
+$$H=\text{mcm}(4,5,10,24)=\mathbf{120}\)$$
+
+04. Periodo Secundario o Tamaño de Trama (f\)\
+
+El tamaño de trama seleccionado es $$f = 1$$
+   
+05. Cronograma y Diagrama de Gantt
+
+    ![image alt]()
 
 
 

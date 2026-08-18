@@ -70,6 +70,7 @@ Como ningún frame entero satisface las tres condiciones de manera directa, se r
 - Marco 19: (vacio)
 
 
+Diagrama de Gantt
 
 
 |Marco|   M1  |  M2 | M3 | M4 |

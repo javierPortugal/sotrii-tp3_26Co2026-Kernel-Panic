@@ -249,15 +249,11 @@ El tamaño de trama seleccionado es $$f = 1$$
 
 ## Describir configuración de FreeRTOS para cumplir con Cyclic Scheduling.
 
-- Debemos de poner los siguientes valores en 0 para que freeRTOs se vuelva estrictamente cooperativo en el archivo FreeRTOSConfig.h (ninguna tarea se ejecutara a menois que la tarea anterior termnine voluntariamente o el planificador lo decida)
-
 /* Desactiva la expropiación automática */
 
 #define configUSE_PREEMPTION                      0 
 
-/* Desactiva el reparto de tiempo entre tareas de igual prioridad */
-
-#define configUSE_TIME_SLICING                    0
+/7 utilizar taskYield() cuando las tareas terminen
 
 
 

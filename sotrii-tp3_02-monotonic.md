@@ -75,7 +75,7 @@ El sistema es automaticamente Planificable
 
 05. Diagrama de Gantt
 
-   ![image alt]()
+   ![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/88257cbe038919300c3da384e974572909a548a7/gantt_sistema_2_rm.png)
 
 |Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|

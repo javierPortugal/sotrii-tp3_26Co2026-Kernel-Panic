@@ -253,7 +253,7 @@ El tamaño de trama seleccionado es $$f = 1$$
 
 #define configUSE_PREEMPTION                      0 
 
-/7 utilizar taskYield() cuando las tareas terminen
+// utilizar taskYIELD() cuando las tareas terminen
 
 
 

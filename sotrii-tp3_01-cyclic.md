@@ -6,7 +6,7 @@
 | :----- | :--------------------- | :------: | 
 |T1     |  1  | 4    |
 |T2      | 2  |  5   |
-|T3      | 5  | 2    |
+|T3      | 5  | 20   |
 
 01. Hay que asignar las Prioridades (Rate Monotonic).\
 Las prioridades se asignan inversamente proporcionales a sus periodos \(T\)

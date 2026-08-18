@@ -35,9 +35,9 @@ El sistema es totalmente Planificable
 
 05. Diagrama de Gantt
 
-  Diagrama de Gantt
 
-![image alt]()
+
+![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/5c73b067249fb1df28f877e858ea5b5adb669f6b/gantt_sistema_1_rm.png)
 
 |Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -74,6 +74,8 @@ Test de Garantía RMS: Como $$\(U = 0.4778 \leq 0.78\)$$, analizamos el analisis
 El sistema es automaticamente Planificable
 
 05. Diagrama de Gantt
+
+   ![image alt]()
 
 |Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -115,6 +117,8 @@ El sistema es totalmente Planificable
 
 05. Diagrama de Gantt
 
+![image alt]()
+
 |Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |T1     | T1  |    |  |   | |  |  |  |  T1 |  |  |  |  |  |  |  | T1  |
@@ -154,6 +158,8 @@ Test de Garantía RMS: Como $$\(U = 0.90 \gt 0.756\)$$, analizamos el analisis d
 El sistema es totalmente Planificable
 
 05. Diagrama de Gantt
+
+![image alt]()
 
 |Tiempo  |0  -  1|  - 2 |  - 3|  - 4|  - 5|  - 6| -7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|
 | :----- | :--:| :--:| :--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|

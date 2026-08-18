@@ -72,6 +72,9 @@ Como ningún frame entero satisface las tres condiciones de manera directa, se r
 
 Diagrama de Gantt
 
+![image alt](https://github.com/javierPortugal/sotrii-tp3_26Co2026-Kernel-Panic/blob/f6bb51b3feadc966a7daeb2733fc077df72d0f84/gantt_sistema_1_ciclico.png)
+
+
 
 |Marco|   M1  |  M2 | M3 | M4 |
 | :----- | :--:| :--:| :--:|:--:|
